@@ -1,0 +1,111 @@
+<html>
+<title>Generador de Ministros de MARITO</title>
+<head>
+	<link rel="stylesheet" href="m.css" />
+	<link rel="stylesheet" href="t.css" />
+	<script language="javascript">
+var am = ["del Interior","del Ambiente","de Agricultura y Ganadería","de Defensa Nacional","de Desarrollo Social","de Educación","de Hacienda","de Industria","de La Niñez","de Tecnología","de Justicia","de la Mujer","de Obras Públicas",
+"de Relaciones Exteriores","de Salud","de Trabajo","de Urbanismo"]
+
+var an = ['Eva "Remedios" Caje', 'Juan Manuel "Comodín" Brunetti', 'Juan Ernesto "el Bife" Villamayor', 'Julio "Insumos" Mazzoleni', 'Andrés "Samaniego" Gubetich', 'Eduardo "Humildad" Petta', 'Justo "IMEDIC" Ferreira', 'Patricia "Agua Tónica" Samudio', 'Édgar "tapabocas de oro" Melgarejo', 'Nilda "Indignada" Romero', 'Mirtha "Mujerines" Elías', 'Ale "Metrobus Digital" Peralta Vierci' ];
+
+var af = ["https://www.elpoder.com.py/images/noticias/nacionales/campaa.jpg", "https://pbs.twimg.com/media/EJqTuG7WkAAetdt.jpg", "https://www.abc.com.py/resizer/JhwhT2x38p0e6ZW_cmCplEAbgIA=/fit-in/770x495/smart/cloudfront-us-east-1.images.arcpublishing.com/abccolor/QF74TNFZH5BNJIMHKN52ZCRTAY.jpg", "https://www.lanacion.com.py/resizer/SCde8hAg5DUw1lxlNbO3-KxJkZY=/900x675/smart/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/VKNEYVJ7BNCY5BR25XPB7BDA4E.jpg", "https://www.rdn.com.py/wp-content/uploads/2021/02/andresgubetich.jpg", "https://www.780am.com.py/wp-content/uploads/2016/08/eduardo-petta-senador.jpg", "https://www.hoy.com.py/imagenes/RRY5FahrrBm4SBzhrN0CaLTFuqvhNLtMMW1uHA0cu5Y/justo_ferreira_importadora.jpg", "https://www.ip.gov.py/ip/wp-content/uploads/2018/10/PATRICIA-SAMUDIO-PETROPAR-2-2.jpg", "https://megacadena.com.py/wp-content/uploads/2020/04/Edgar-Melgarejo-DINAC-Tapabocas.jpg", "http://cdn.paraguay.com/photos/images/000/166/389/regular_nilda.jpg.jpg?1528483120", "https://www.lanacion.com.py/resizer/99iRQj2TPmvfP99o5R-cXE65HP4=/480x685/smart/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/BECWJBD3CBFQHBJMNU5NGO4WLE.jpg","https://www.lanacion.com.py/resizer/jf_lENV7MzPtw4AH_Z9tOu_kjWk=/900x624/smart/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/QV44RU2J7VDF7K5MW2LM2EIPU4.jpg"];
+
+var aa = ["cuando Cartes me de permiso", "cuando termine de leer la Biblia", "cuando la policia reciba el último abrazo de los manifestantes", "cuando todas las madres solteras formen una familia tradicional mamá papá hijos", "con un comunicado de la UIP", "cuando llegue la próxima donación de Taiwan", "en la seccional colorada más cercana", "cuando el EPP genere la próxima distracción", "en una escuela que se cae", "en una boda sin tapabocas en Sanber", "con una corona de flores del Exa San José 1983 en el Panteón", "en una Caperucita Roja de la época de Stroessner", "cuando el CEO de Lamborghini Latinoamerica traiga su fabrica al Paraguay", "cuando terminemos de regalar Itaipú al Brasil", "con Arrom y Martí en Finlandia", "cuando termine de auto-felicitarme en el Twitter", "durante la próxima inauguración de un cajero automático", "cuando el árbol de Gonzalez Daher de algun fruto", "en una pollada para juntar fondos para Salud", "en la próxima temporada de incendios forestales", "cuando vuelva la luz en Mburuvicha Roga @ANDEoficial por favor hace 3 horas estamos sin luz", "disparando balines de goma a los manifestantes", "cuando venga su micro, parece que hay regulada otra vez de Cetrapam @cesarruizdiaz09", "cuando terminemos de deforestar el Chaco", "en alguna mansión de mis socios comerciales en Chaco'i"]
+
+var amr = [];
+var anr = [];
+var aar = [];
+
+
+function geti( a, r ){
+	if (a.length==r.length) r.length = 0;
+
+	var i = Math.floor(Math.random() * a.length);
+	if (r.indexOf(i)!=-1) {
+		return geti( a, r );
+	} else {
+		r.push( i );
+		return i;
+	}	
+}
+
+function cambiar(){
+console.log(anr)
+	var m = document.getElementById('m');
+	var n = document.getElementById('n');
+	var a = document.getElementById('a');
+	var f = document.getElementById('f');
+ 
+	m.innerHTML = am[ geti( am, amr ) ];
+
+	var ni = geti( an, anr );
+	n.innerHTML = an[ni]
+	f.src = af[ni]
+
+	a.innerHTML = aa[ geti( aa, aar ) ];
+
+}
+	</script>
+</head>
+
+<body style="font-family:Arial" class="m-0 p-0">
+
+<div class="bg-red-100">
+<h1 class="text-2xl font-bold text-center py-5">Generador de Ministros de Marito al azar</h1>
+<div class="my-5 text-center">
+<span class="text-white bg-red-600 hover:bg-red-400 text-sm shadow-lg px-8 py-4 my-8 rounded-lg cursor-pointer transition duration-500 ease-in-out select-none" onclick="cambiar()">¡Click para aquí para Generar nuevo Ministro!</span>
+</div>
+<br/>
+</div>
+
+<br/>
+
+                    <!-- BEGIN GENERATED TWEET -->
+                        <div class="preview-border" id="previewBorder" >
+                            <div class="tweetContainer" id="tweetContainer"style="margin:auto" theme="light">
+                                <div class="headerContainer css-1dbjc4n">
+                                    <div class="pfp css-1dbjc4n">
+                                        <img src="https://pbs.twimg.com/profile_images/1324705304689389568/7esKig8t_400x400.jpg" width="49" height="49" id="pfpOutput">
+                                    </div>
+                                    <div class="headerRight css-1dbjc4n">
+                                        <div class="userinfo css-1dbjc4n">
+                                            <div class="nameContainer css-1dbjc4n">
+                                                <span class="name" id="nameOutput">Marito Abdo</span>
+                                                <span class="verified" id="verifiedOutput" style="display:none;">
+                                                   <svg viewBox="0 0 24 24"><g><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"></path></g></svg>
+                                                </span>
+                                            </div>
+                                            <div class="username css-1dbjc4n">
+                                                <span>@</span><span id="usernameOutput">MaritoAbdo</span>
+                                            </div>
+                                        </div>
+                                        <div class="tweetDropdown css-1dbjc4n">
+                                            <svg viewBox="0 0 24 24"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tweetText" dir="auto">
+                                    <span id="tweetTextOutput">El nuevo Ministro <span id="m">de Educación</span> será <b id="n">Silvestre "Escupidor del Biggie" Gomez</b> y jurará oficialmente <span id="a">cuando Friedmann termine la secundaria</span>.
+<img id="f" class="mt-4" src="https://www.hoy.com.py/imagenes/AaRlVR7P7zEOQwoJ6-MpQnJ5IDJDKoZkBdvJy6VKmM0/abogado.jpg" /></span>
+                                </div>
+                                <div class="imgContainer" id="imgContainer" style="display:none;">
+                                    <img class="tweetImg" id="imgOutput">
+                                </div>
+                                <div class="debunk" id="debunkDisplay" style="display:none;">
+                                    
+                                    <div class="debunkText" id="debunkText"></div>
+                                </div>
+                                <div class="tweetDetails"><span>
+                                    <span id="timeOutput">12:00 PM</span> &#183; <span id="monthOutput">Jan</span> <span id="dayOutput">1</span>, <span id="yearOutput">2021</span><span id="clientDisplay" style="display:none"> &#183; <span class="client" id="clientOutput"></span></span>
+                                </span></div>
+
+                            </div>
+                        </div>
+                        <!-- END GENERATED TWEET -->
+
+
+
+
+</body>
+</html>
